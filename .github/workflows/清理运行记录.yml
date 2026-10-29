@@ -11,6 +11,7 @@ jobs:
         env:
           REPO: ${{ github.repository }}
           CURRENT_RUN_ID: ${{ github.run_id }}
+          GH_TOKEN: ${{ github.token }}
         run: |
           tmp=$(mktemp)
           del=$(mktemp)
